@@ -9,7 +9,7 @@ def get_from_env(key):
     return os.environ.get(key)
 token = get_from_env('TELEGRAM_BOT_TOKEN')
 bot = telebot.TeleBot(token)
-
+print('test')
 
 @bot.message_handler(commands=['start', 'back'])
 def start(message):
